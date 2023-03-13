@@ -1,5 +1,15 @@
-<p>layout works!</p>
+<div class="row">
+  <div class="col-12 col-lg-6 text-center mb-3">
+    <ngb-datepicker #datePicker [(ngModel)]="model"></ngb-datepicker>
+  </div>
+  <div class="col-12 col-lg-6">
+    <button type="button" class="btn btn-primary btn-block" (click)="goToToday()">
+      Go to today
+    </button>
+    <button type="button" class="btn btn-primary btn-block" (click)="goToFiveDaysToday()">
+      Go to 5 days later from today
+    </button>
+  </div>
+</div>
 
-<button type="button" class="btn btn-success" ngbTooltip="Success">
-  Success
-</button>
+
